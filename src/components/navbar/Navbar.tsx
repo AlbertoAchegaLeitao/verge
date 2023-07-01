@@ -1,20 +1,37 @@
 import React from "react";
-import { StyledHeading, Container } from "./styles";
+import {
+  Container,
+  Navbar,
+  Logo,
+  StyledLink,
+  Hero,
+  HeroContainer,
+  Btn,
+} from "./styles";
+import header from "../../assets/images/header.jpg";
 import { Link } from "react-router-dom";
 
 const Navabar = () => {
+  const backgroundImage = `url(${header})`;
+
   return (
-    <Container>
-      <Link to="/">
-        <StyledHeading>Verge</StyledHeading>
-      </Link>
-      <div>
-        <Link to="/about">About</Link>
-        <Link to="/menu">Menu</Link>
-        <Link to="/Reservation">Reservation</Link>
-        <Link to="/login">Login</Link>
-      </div>
-    </Container>
+    <Navbar backgroundImage={backgroundImage}>
+      <Logo to="/">Verge</Logo>
+      <Container>
+        <StyledLink to="/about">About</StyledLink>
+        <StyledLink to="/menu">Menu</StyledLink>
+        <StyledLink to="/reservation">Reservation</StyledLink>
+        <StyledLink to="/login">Login</StyledLink>
+      </Container>
+      <HeroContainer>
+        <Hero>
+          Where Gastronomy and Ambiance Converge, Discover the Verge of
+          Exquisite Dining.
+        </Hero>
+      </HeroContainer>
+
+      <Btn>Reserve a Table</Btn>
+    </Navbar>
   );
 };
 
