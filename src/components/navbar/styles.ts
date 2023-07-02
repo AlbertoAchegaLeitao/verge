@@ -45,6 +45,9 @@ export const StyledLink = styled(Link)`
   @media (max-width: 600px) {
     font-size: 1rem;
   }
+  @media (max-width: 300px) {
+    font-size: 0.8rem;
+  }
 `;
 
 export const Container = styled.header`
@@ -57,7 +60,12 @@ export const Container = styled.header`
 export const HeroContainer = styled.div`
   padding: 0 10rem 2rem 10rem;
 
-  @media (max-width: 512px);
+  @media (max-width: 512px) {
+    padding: 0 2rem 2rem 2rem;
+  }
+  @media (max-width: 400px) {
+    padding: 0 0.5rem 2rem 0.5rem;
+  }
 `;
 
 export const Hero = styled.div`
@@ -70,18 +78,9 @@ export const Hero = styled.div`
   @media (max-width: 800px) {
     font-size: 2rem;
   }
-`;
-
-export const fillUpAnimation = `
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 0;
-  background-color: #ffffff;
-  transition: height 0.3s ease;
-  
+  @media (max-width: 400px) {
+    font-size: 1.5rem;
+  }
 `;
 
 export const Btn = styled.button`
@@ -89,26 +88,26 @@ export const Btn = styled.button`
   margin-bottom: 5rem;
   display: inline-block;
   padding: 10px 20px;
-  border: 5px solid #ffffff;
-  background-color: transparent;
+  border: 5px solid rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
   text-decoration: none;
-  color: #ffffff;
+  color:#000000;
   font-size: 25px;
   font-family: "Roboto Mono", sans-serif;
   cursor: pointer;
   overflow: hidden;
   position: relative;
 
-  &::before,
-  &::after {
-    ${fillUpAnimation}
+    &:hover {
+    transform: scale(1.1); /* Scaling the button by 10% on hover */
+    background-color: rgba(255, 255, 255, 1); /* Full opacity background on hover */
+    border-color: rgba(255, 255, 255, 1); /* Full opacity border on hover */
   }
+  
+@media (max-width: 300px) {
+   padding: 5px 10px;
+   font-size: 20px;
+}
 
-  &:hover::before,
-  &:hover::after {
-    height: 100%;
-  }
-  &:hover {
-    color: #000000;
   }
 `;

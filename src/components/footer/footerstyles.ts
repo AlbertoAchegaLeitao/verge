@@ -13,6 +13,9 @@ export const FooterContainer = styled.div`
   @media (max-width: 512px) {
     padding: 5rem 2rem;
   }
+  @media (max-width: 300px) {
+    padding: 5rem 0.2rem;
+  }
 `;
 
 export const Contacts = styled.div``;
@@ -25,6 +28,10 @@ export const CH2 = styled.h2`
 `;
 export const HR = styled.hr`
   width: 300px;
+
+  @media (max-width: 400px) {
+    width: 200px;
+  }
 `;
 
 export const CH3 = styled.h3`
