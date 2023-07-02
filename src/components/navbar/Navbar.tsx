@@ -9,7 +9,6 @@ import {
   Btn,
 } from "./styles";
 import header from "../../assets/images/header.jpg";
-import { Link } from "react-router-dom";
 
 const Navabar = () => {
   const backgroundImage = `url(${header})`;

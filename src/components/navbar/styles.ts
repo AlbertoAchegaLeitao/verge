@@ -12,7 +12,7 @@ export const Navbar = styled.nav<NavbarProps>`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   background-image: ${(props) => props.backgroundImage};
   background-repeat: no-repeat;
   background-size: cover;
@@ -29,6 +29,11 @@ export const Logo = styled(Link)`
   font-size: 8rem;
   font-weight: 700;
   font-family: "Dancing Script", sans-serif;
+
+  @media (max-width: 600px) {
+    font-size: 5rem;
+  }
+
 `;
 
 export const StyledLink = styled(Link)`
@@ -37,6 +42,10 @@ export const StyledLink = styled(Link)`
   padding: 0 1rem 2rem 0;
   font-size: 1.5rem;
   font-family: "Roboto Mono", sans-serif;
+
+  @media (max-width: 600px) {
+    font-size: 1rem;
+  }
 `;
 
 export const Container = styled.header`
