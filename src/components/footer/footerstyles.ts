@@ -1,12 +1,18 @@
 import styled from "styled-components";
 
 export const FooterContainer = styled.div`
-  height: 500px;
   padding: 5rem 5rem;
   background-color: #faf6ec;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(300px, 1fr)
+  ); /* Change this line */
   grid-gap: 50px;
+
+  @media (max-width: 512px) {
+    padding: 5rem 2rem;
+  }
 `;
 
 export const Contacts = styled.div``;

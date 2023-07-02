@@ -33,7 +33,6 @@ export const Logo = styled(Link)`
   @media (max-width: 600px) {
     font-size: 5rem;
   }
-
 `;
 
 export const StyledLink = styled(Link)`
@@ -57,6 +56,8 @@ export const Container = styled.header`
 
 export const HeroContainer = styled.div`
   padding: 0 10rem 2rem 10rem;
+
+  @media (max-width: 512px);
 `;
 
 export const Hero = styled.div`
