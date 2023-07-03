@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const FooterContainer = styled.div`
   padding: 5rem 5rem;
-  background-color: #faf6ec;
+  background-color: #ffffff;
   display: grid;
   grid-template-columns: repeat(
     auto-fit,

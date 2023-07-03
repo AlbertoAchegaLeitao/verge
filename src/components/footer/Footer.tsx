@@ -26,8 +26,8 @@ const Footer = () => {
         <HR />
         <CH3>Restaurant Verge Lisboa</CH3>
         <CPar>
-          Hotel Tivoli Avenida da Liberdade Avenida da Liberdade, 185, 9º piso
-          1260-050 Lisboa, Portugal
+          Hotel Tivoli Avenida da Liberdade, <br /> 185, 9º piso 1260-050
+          Lisboa, Portugal
         </CPar>
       </Location>
     </FooterContainer>
