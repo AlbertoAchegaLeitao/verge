@@ -7,7 +7,7 @@ interface NavbarProps {
   backgroundImage: string; // Add the backgroundImage prop to the interface
 }
 
-export const Navbar = styled.nav<NavbarProps>`
+export const Nav = styled.nav<NavbarProps>`
   padding: 1rem 0;
   display: flex;
   flex-direction: column;

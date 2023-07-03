@@ -1,16 +1,16 @@
 import React from "react";
 import { Outlet } from "react-router";
-
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
+import { HeroTextProvider } from "./components/navbar/HeroContext";
 
 const App = () => {
   return (
-    <div>
+    <HeroTextProvider>
       <Navbar />
       <Outlet />
       <Footer />
-    </div>
+    </HeroTextProvider>
   );
 };
 
